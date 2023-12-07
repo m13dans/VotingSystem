@@ -11,3 +11,17 @@ C:\Users\danur\tutorial\CSharp\Project\Beginner\RawCoding\VotingSystem\SandBox\o
 C:\Users\danur\tutorial\CSharp\Project\Beginner\RawCoding\VotingSystem\SandBox\obj\Debug\netcoreapp3.1\SandBox.dll
 C:\Users\danur\tutorial\CSharp\Project\Beginner\RawCoding\VotingSystem\SandBox\obj\Debug\netcoreapp3.1\SandBox.pdb
 C:\Users\danur\tutorial\CSharp\Project\Beginner\RawCoding\VotingSystem\SandBox\obj\Debug\netcoreapp3.1\SandBox.genruntimeconfig.cache
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\bin\Debug\netcoreapp3.1\SandBox.exe
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\bin\Debug\netcoreapp3.1\SandBox.deps.json
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\bin\Debug\netcoreapp3.1\SandBox.runtimeconfig.json
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\bin\Debug\netcoreapp3.1\SandBox.runtimeconfig.dev.json
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\bin\Debug\netcoreapp3.1\SandBox.dll
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\bin\Debug\netcoreapp3.1\SandBox.pdb
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\obj\Debug\netcoreapp3.1\SandBox.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\obj\Debug\netcoreapp3.1\SandBox.AssemblyInfoInputs.cache
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\obj\Debug\netcoreapp3.1\SandBox.AssemblyInfo.cs
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\obj\Debug\netcoreapp3.1\SandBox.csproj.CoreCompileInputs.cache
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\obj\Debug\netcoreapp3.1\SandBox.sourcelink.json
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\obj\Debug\netcoreapp3.1\SandBox.dll
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\obj\Debug\netcoreapp3.1\SandBox.pdb
+C:\Users\astym\Tutorial\CSharp\Project\Beginner\VotingSystem\SandBox\obj\Debug\netcoreapp3.1\SandBox.genruntimeconfig.cache

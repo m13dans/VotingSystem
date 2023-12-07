@@ -1,37 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Xunit;
 using Xunit.Sdk;
 using static Xunit.Assert;
 
 namespace VotingSystem.test
 {
-    public class CounterTest
+    public class CounterManagerTest
     {
-        public const string CounterName = "Counter Name";
-        public const int CounterCount = 5;
-        public Counter _counter = new Counter {  Name = CounterName, Count = CounterCount };
-
-        [Fact]
-        public void HasName()
-        {
-            Equal(CounterName, _counter.Name);
-        }
-
-        [Fact]
-        public void GetStatistics_IncludesCounterName()
-        {
-            var statistics = _counter.GetStatistic(5);
-
-            Equal(CounterName, statistics.Name);
-        }
+        private const string CounterName = "Counter Name";
+        private readonly Counter _counter = new Counter { Name = CounterName, Count = 5 };
 
         [Fact]
         public void GetStatistics_IncludesCounterCount()
         {
-            var statistics = _counter.GetStatistic(5);
+            var statistics = new CounterManager().GetStatistic(_counter, 5);
 
             Equal(5, statistics.Count);
         }
@@ -44,7 +28,7 @@ namespace VotingSystem.test
         {
             _counter.Count = count;
 
-            var statistics = _counter.GetStatistic(total);
+            var statistics = new CounterManager().GetStatistic(_counter, total);
 
             Equal(percent, statistics.Percent);
         }
@@ -55,7 +39,7 @@ namespace VotingSystem.test
             var counter1 = new Counter { Count = 1, Percent = 33.33 };
             var counter2 = new Counter { Count = 1, Percent = 33.33 };
             var counter3 = new Counter { Count = 1, Percent = 33.33 };
-            var counters = new List<Counter> { counter1, counter2, counter3};
+            var counters = new List<Counter> { counter1, counter2, counter3 };
 
             new CounterManager().ResolveExcess(counters);
 
@@ -121,24 +105,21 @@ namespace VotingSystem.test
         public int Count { get; set; }
         public double Percent { get; set; }
 
-
-        public Counter GetStatistic(int total)
+    }
+    public class CounterManager
+    {
+        public Counter GetStatistic(Counter counter, int total)
         {
-            Percent = Math.Round( Count * 100.0 / total, 2);
-            return this;
+            counter.Percent = Math.Round(counter.Count * 100.0 / total, 2);
+            return counter;
         }
 
-
-        
-    }
-        public class CounterManager
+        public void ResolveExcess(List<Counter> counters)
         {
-            public void ResolveExcess(List<Counter> counters)
-            {
-                var totalPercent = counters.Sum(x => x.Percent);
-                var excess = Math.Round(100 - totalPercent, 2);
-                var winnerCount = counters.Max(counter => counter.Count);
-                var winners = counters.Where(c => c.Count == winnerCount).ToList();
+            var totalPercent = counters.Sum(x => x.Percent);
+            var excess = Math.Round(100 - totalPercent, 2);
+            var winnerCount = counters.Max(counter => counter.Count);
+            var winners = counters.Where(c => c.Count == winnerCount).ToList();
 
             if (winners.Count == 1)
                 winners.First().Percent += excess;
@@ -156,6 +137,6 @@ namespace VotingSystem.test
 
             //    addExcessToWInner(counters, excess);
 
-            }
         }
+    }
 }

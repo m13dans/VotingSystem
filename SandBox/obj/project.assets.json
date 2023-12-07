@@ -8,26 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\danur\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\astym\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danur\\tutorial\\CSharp\\Project\\Beginner\\RawCoding\\VotingSystem\\SandBox\\SandBox.csproj",
+      "projectUniqueName": "C:\\Users\\astym\\Tutorial\\CSharp\\Project\\Beginner\\VotingSystem\\SandBox\\SandBox.csproj",
       "projectName": "SandBox",
-      "projectPath": "C:\\Users\\danur\\tutorial\\CSharp\\Project\\Beginner\\RawCoding\\VotingSystem\\SandBox\\SandBox.csproj",
-      "packagesPath": "C:\\Users\\danur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danur\\tutorial\\CSharp\\Project\\Beginner\\RawCoding\\VotingSystem\\SandBox\\obj\\",
+      "projectPath": "C:\\Users\\astym\\Tutorial\\CSharp\\Project\\Beginner\\VotingSystem\\SandBox\\SandBox.csproj",
+      "packagesPath": "C:\\Users\\astym\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\astym\\Tutorial\\CSharp\\Project\\Beginner\\VotingSystem\\SandBox\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\danur\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\astym\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
