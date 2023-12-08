@@ -70,6 +70,12 @@ namespace VotingSystem.test
             Equal(_request.Description, poll.Description);
         }
     }
+
+    public interface IVotingPollFactory
+    {
+        VotingPoll Create(VotingPollFactory.Request request);
+    }
+
     public class VotingPollFactory
     {
         public class Request
